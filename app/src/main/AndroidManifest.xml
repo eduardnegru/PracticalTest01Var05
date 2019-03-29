@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PracticalTest01Var05SecondaryActivity" />
+        <service android:name=".PracticalTest01Var05Service"/>
     </application>
 
 </manifest>

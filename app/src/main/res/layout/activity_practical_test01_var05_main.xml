@@ -6,13 +6,68 @@
     android:layout_height="match_parent"
     tools:context=".PracticalTest01Var05MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/firstText"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/secondText"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/thirdText"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/firstCheckbox"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/secondCheckbox"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/thirdCheckbox"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/playButton"
+                android:text="Play"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>
